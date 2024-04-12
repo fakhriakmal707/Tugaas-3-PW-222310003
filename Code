@@ -1,0 +1,27 @@
+            } else if (password === "") {
+                alert("password tidak boleh kosong")
+            } else {
+                if (email === "222310003@student.ibik.ac.id" && password === "222310003") {
+                    alert(Sign In Successful, Welcome ${email})
+                } else {
+                    alert("username tidak ditemukan")
+                }
+            }
+
+        }
+
+
+        icon.addEventListener('click', () => {
+            if (password.type === 'password') {
+                icon.innerHTML = '<i class="bi bi-eye"></i>';
+                password.type = 'text';
+
+            } else {
+                icon.innerHTML = '<i class="bi bi-eye-slash-fill"></i>';
+                password.type = 'password';
+            }
+        })
+    </script>
+</body>
+
+</html>
